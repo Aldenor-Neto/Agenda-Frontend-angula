@@ -1,0 +1,9 @@
+div{
+    display: flex;
+}
+label{
+    margin: 5px;
+}
+.botoes{
+    display: block;
+}

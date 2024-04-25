@@ -1,0 +1,13 @@
+<h1>Lista de Contatos</h1>
+<button routerLink="/criar-contato">Criar Contato</button>
+
+<div class="condicional-laco">
+    @if(lista.length > 0){
+    @for(c of lista; track $index){
+    <p>{{ c.nome }}</p>
+    }
+    }
+    @else{
+    <p>Lista vazia"</p>
+    }
+</div>
