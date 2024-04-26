@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 100px; /* ajuste conforme necessário */
+    height: auto; /* para manter a proporção */
+    margin-right: 10px; /* espaço entre a imagem e o título */
+}
+
+header h1 {
+    color: #fff; /* cor do texto */
+    font-size: 24px; /* tamanho da fonte */
+    margin: 0; /* remover margem padrão */
+}

@@ -8,11 +8,12 @@ body {
 }
 
 h1 {
-    color: #333; /* Cor do título para o modo claro */
+    color: #fff; 
 }
 
 h2, h3 {
     margin-top: 20px;
+    color: yellowgreen;
 }
 
 div {
