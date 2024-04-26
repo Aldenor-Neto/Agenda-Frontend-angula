@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Contato } from './contato';
-import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
+import { url } from 'inspector';
 
 @Injectable({
   providedIn: 'root'
@@ -32,9 +32,9 @@ export class ContatoService {
   }
 
   excluir(id: number): Observable<Contato> {
-    const url = `${this.API}/${id}`
+//    const url = this.API+ "/" + id;
+    const url = `${this.API}/${id}`;
     return this.http.delete<Contato>(url);
-
   }
 
 }
