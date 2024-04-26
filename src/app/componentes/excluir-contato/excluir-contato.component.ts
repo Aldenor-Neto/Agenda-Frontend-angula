@@ -33,6 +33,7 @@ contato: Contato={
   }
 
   excluirContato() {
+
     if (this.contato.id) {
       this.service.excluir(this.contato.id).subscribe(() => {
         this.router.navigate(["/listar-contatos"])

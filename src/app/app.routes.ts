@@ -4,6 +4,7 @@ import { CriarContatoComponent } from './componentes/criar-contato/criar-contato
 import { ContatoComponent } from './componentes/contato/contato.component';
 import { EditarContatoComponent } from './componentes/editar-contato/editar-contato.component';
 import { ExcluirContatoComponent } from './componentes/excluir-contato/excluir-contato.component';
+import { VisualizarContatoComponent } from './componentes/visualizar-contato/visualizar-contato.component';
 
 export const routes: Routes = [
     {
@@ -21,6 +22,10 @@ export const routes: Routes = [
     {
         path: "editar-contato/:id",
         component: EditarContatoComponent
+    },
+    {
+        path: "visualizar-contato/:id",
+        component: VisualizarContatoComponent
     },
     {
         path: "",

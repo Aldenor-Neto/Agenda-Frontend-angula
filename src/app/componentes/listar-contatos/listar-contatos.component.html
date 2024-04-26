@@ -6,6 +6,7 @@
     @for(c of lista; track $index){
     <p>{{ c.nome }}</p>
     <div>
+        <button routerLink="/visualizar-contato/{{ c.id }}">Visualizar</button>
         <button routerLink="/editar-contato/{{ c.id }}">Editar</button>
         <button routerLink="/excluir-contato/{{ c.id }}">Excluir</button>
     </div>

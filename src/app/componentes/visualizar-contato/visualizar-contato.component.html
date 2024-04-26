@@ -1,0 +1,9 @@
+<h1>Detalhes</h1>
+<button routerLink="/listar-contatos">Lista de contatos</button>
+<h2>Nome: {{ contato.nome }}</h2>
+<h3>Telefone: {{ contato.telefone }}</h3>
+<h3>Email: {{ contato.email }}</h3>
+<div>
+    <button routerLink="/editar-contato/{{ contato.id }}">Editar</button>
+    <button routerLink="/excluir-contato/{{ contato.id }}">Excluir</button>
+</div>
