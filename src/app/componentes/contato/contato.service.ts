@@ -21,4 +21,20 @@ export class ContatoService {
     return this.http.get<Contato[]>(this.API);
   }
 
+  buscaId(id: number): Observable<Contato> {
+    const url = `${this.API}/${id}`
+    return this.http.get<Contato>(url)
+  }
+
+  editar(contato: Contato): Observable<Contato> {
+    const url = `${this.API}/${contato.id}`
+    return this.http.put<Contato>(url, contato)
+  }
+
+  excluir(id: number): Observable<Contato> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Contato>(url);
+
+  }
+
 }

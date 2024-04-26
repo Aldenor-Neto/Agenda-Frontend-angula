@@ -5,6 +5,9 @@
     @if(lista.length > 0){
     @for(c of lista; track $index){
     <p>{{ c.nome }}</p>
+    <div>
+        <button routerLink="/editar-contato/{{ c.id }}">Editar</button>
+    </div>
     }
     }
     @else{
