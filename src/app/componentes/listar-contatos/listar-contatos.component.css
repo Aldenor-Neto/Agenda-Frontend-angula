@@ -7,6 +7,15 @@ h1 {
     color: #fff; /* Cor do título para o modo escuro */
 }
 
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff; /* Alterado para borda branca */
+  background-color: #444;
+  color: #fff;
+}
+
 .condicional-laco {
     margin-top: 20px;
 }

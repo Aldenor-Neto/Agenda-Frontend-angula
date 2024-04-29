@@ -1,4 +1,6 @@
 <h1>Lista de Contatos</h1>
+
+<input type="text" placeholder="Pesquisar contato" [(ngModel)]="busca" (keyup)="filtrarContatos()">
 <button routerLink="/criar-contato">Criar Contato</button>
 
 <div class="condicional-laco">
